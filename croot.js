@@ -11,6 +11,6 @@ export function validatePhoneNumber(input) {
     input.value = input.value.replace(/[^0-9]/g, '');
     // Jika karakter pertama adalah 0, hapus karakter tersebut
     if (input.value.length > 1 && input.value.charAt(0) === '0') {
-        input.value = input.value.substr(1);
+        input.value = '62'+input.value.substr(1);
     }
 }
